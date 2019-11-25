@@ -76,8 +76,8 @@ to evaluate SQL server Database Performance.
 
 | Endpoint | Average Result |
 | ------ | ------ |
-| FeedbackOptions | 726 ms |
-| Recommendations | 974 ms|
+| FeedbackOptions | 269 ms |
+| Recommendations | 299 ms|
 
 ### How to
 
