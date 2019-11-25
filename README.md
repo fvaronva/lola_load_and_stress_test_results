@@ -69,8 +69,8 @@ to evaluate SQL server Database Performance.
 
 * The information used to create the graphics is located into: `Performance_test_SQL_Results.xlsx`.
 
-<img src="LOLAstress and loadTest_v1.0/images/feedbackoptions.png" width="400">
-<img src="LOLAstress and loadTest_v1.0/images/recommendations.png" width="400">
+<img src="images/feedbackoptions.png" width="400">
+<img src="images/recommendations.png" width="400">
 
 ### Result analysis
 
