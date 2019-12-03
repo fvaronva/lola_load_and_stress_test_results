@@ -1,0 +1,459 @@
+{
+	"info": {
+		"_postman_id": "8d81d1e3-70ba-415f-9012-86e8419522e1",
+		"name": "LOLA_SQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "feedbackOptions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "048ebbf5-ffc6-4213-b14a-5725f73da78e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}feedbackOptions?client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}feedbackOptions"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				},
+				"description": "get all Feedback Options"
+			},
+			"response": []
+		},
+		{
+			"name": "brandPartitions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "048ebbf5-ffc6-4213-b14a-5725f73da78e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}brandPartitions?client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}brandPartitions"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recommendationsBywslrNbrAndwslrAsgndCustNbr",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "048ebbf5-ffc6-4213-b14a-5725f73da78e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}recommendations?wslrNbr={{recomm_wslrAsg}}&wslrAsgndCustNbr={{recomm_wslrNbr}}&client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}recommendations"
+					],
+					"query": [
+						{
+							"key": "wslrNbr",
+							"value": "{{recomm_wslrAsg}}"
+						},
+						{
+							"key": "wslrAsgndCustNbr",
+							"value": "{{recomm_wslrNbr}}"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recoPerAcc",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "048ebbf5-ffc6-4213-b14a-5725f73da78e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}recommendationsPerAccount?wslrNbrPA={{recoPerAcc_wslrNbrPA}}&wslrAsgndCustNbrPA={{recoPerAcc_wslrAsgndCustNbrPA}}&client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}recommendationsPerAccount"
+					],
+					"query": [
+						{
+							"key": "wslrNbrPA",
+							"value": "{{recoPerAcc_wslrNbrPA}}"
+						},
+						{
+							"key": "wslrAsgndCustNbrPA",
+							"value": "{{recoPerAcc_wslrAsgndCustNbrPA}}"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "skusByrecoIdAndwslrNbr",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "048ebbf5-ffc6-4213-b14a-5725f73da78e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}skus?recoId={{sku_recoid}}&wslrNbr={{sku_wslrNbr}}&client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}skus"
+					],
+					"query": [
+						{
+							"key": "recoId",
+							"value": "{{sku_recoid}}"
+						},
+						{
+							"key": "wslrNbr",
+							"value": "{{sku_wslrNbr}}"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feedbacksGET",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "048ebbf5-ffc6-4213-b14a-5725f73da78e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}feedbacks?recoId={{feedback_recoid}}&fdbck_id={{feedback_fdbckid}}&client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}feedbacks"
+					],
+					"query": [
+						{
+							"key": "recoId",
+							"value": "{{feedback_recoid}}"
+						},
+						{
+							"key": "fdbck_id",
+							"value": "{{feedback_fdbckid}}"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feedbacksPOST",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "048ebbf5-ffc6-4213-b14a-5725f73da78e",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"recomendationId\": \"{{feedbackP_recomendationId}}\",\r\n  \"feedbackOptionId\": \"{{feedbackP_feedbackOptionId}}\",\r\n  \"activeFlag\": \"{{feedbackP_activeFlag}}\",\r\n  \"createdByUserId\": \"{{feedbackP_createdByUserId}}\",\r\n  \"modifiedByUserId\": \"{{feedbackP_modifiedByUserId}}\",\r\n  \"EDW_MOD_FLG\": \"{{feedbackP_EDW_MOD_FLG}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{basePath}}feedbacks?client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}feedbacks"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "metrics",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "048ebbf5-ffc6-4213-b14a-5725f73da78e",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"{{metrics_userId}}\",\r\n  \"applicationId\": \"{{metrics_applicationId}}\",\r\n  \"applicationVersion\": \"{{metrics_applicationVersion}}\",\r\n  \"componentId\": \"{{metrics_componentId}}\",\r\n  \"recordId\": \"{{metrics_recordId}}\",\r\n  \"sessionID\": \"{{metrics_sessionID}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{basePath}}metrics?client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}metrics"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "surveyMontly",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "048ebbf5-ffc6-4213-b14a-5725f73da78e",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"{{surveyM_userId}}\",\r\n  \"applicationId\": \"{{surveyM_applicationId}}\",\r\n  \"calendarYearMonthNumber\": \"{{surveyM_calendarYearMonthNumber}}\",\r\n  \"dayOfMonthNumber\": \"{{surveyM_dayOfMonthNumber}}\",\r\n  \"ratingCode\": \"{{surveyM_ratingCode}}\",\r\n  \"sessionID\": \"{{surveyM_sessionID}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{basePath}}surveyMontly?client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}surveyMontly"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "e8cfcf9a-ade9-43f3-ba30-1fb50a37d858",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "fa17a252-b2ca-4841-ae17-9f9a7445164d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "a19f5c5e-9ff1-4577-8135-e6a8921ae6dc",
+			"key": "basepath",
+			"value": "https://abid-sql-lola-edw-api-v1.us-e1.cloudhub.io/api/",
+			"type": "string"
+		},
+		{
+			"id": "5b6f896d-3a88-439f-a118-ce8f5cfa1b2e",
+			"key": "client_id",
+			"value": "31ecd23b80dc49aeae5c9f8ec5679d48",
+			"type": "string"
+		},
+		{
+			"id": "830113e1-4c14-4b10-af6e-d8c3154f27df",
+			"key": "client_secret",
+			"value": "2CEB712Eef154884B16f227d5ac6E11a",
+			"type": "string"
+		}
+	]
+}
