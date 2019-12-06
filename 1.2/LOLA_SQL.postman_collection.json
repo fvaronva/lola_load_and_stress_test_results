@@ -1,0 +1,625 @@
+{
+	"info": {
+		"_postman_id": "ed0218f4-e54c-4749-91bd-91314bee350f",
+		"name": "REFACTOR_LOLA_SQL_PROD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "brandPartitions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bebd3c90-e581-49ce-ae29-cb606abb6838",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}brandPartitions?client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}brandPartitions"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feedbackOptions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f2e63950-c02a-4547-ab18-260c6714d98a",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}feedbackOptions?client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}feedbackOptions"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "opportunitiesPerAccount",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "aa16220e-af98-47b6-8d6f-19340ee3702e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}opportunitiesPerAccount?wslr_Nbr_AsgndCust=123,456;&client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}opportunitiesPerAccount"
+					],
+					"query": [
+						{
+							"key": "wslr_Nbr_AsgndCust",
+							"value": "123,456;"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "metrics",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4eb0dacd-93fa-4d90-b0d7-03353d932fc7",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"0050B000007LDAZQA4F4B14N\",\r\n  \"applicationId\": \"LolaApp\",\r\n  \"applicationVersion\": \"2.1\",\r\n  \"componentId\": \"Lola App Home\",\r\n  \"recordId\": \"2\",\r\n  \"sessionID\": \"0050B000007LDAZQA4SDOFJWEOIFJ30492304794734958738RSAKDFJOIJ923FJ3948FJ3948RJEOEOFJ2039U2309RU90J0493JFi890394JF2093JDMJD029\"\r\n}"
+				},
+				"url": {
+					"raw": "{{basePath}}metrics?client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}metrics"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feedbacks(GET)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "002d61b3-d65f-47e6-a6bb-beb1a1b72f5a",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}feedbacks?recoId=191539351&fdbck_id=2000001&client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}feedbacks"
+					],
+					"query": [
+						{
+							"key": "recoId",
+							"value": "191539351"
+						},
+						{
+							"key": "fdbck_id",
+							"value": "2000001"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feedbacksPOST",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "048ebbf5-ffc6-4213-b14a-5725f73da78e",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"recomendationId\": \"987654321\",\r\n  \"feedbackOptionId\": \"2000001\",\r\n  \"activeFlag\": \"A\",\r\n  \"createdByUserId\": \"jhondoe@mail.com\",\r\n  \"modifiedByUserId\": \"jhondoe@mail.com\",\r\n  \"EDW_MOD_FLG\": \"A\"\r\n}"
+				},
+				"url": {
+					"raw": "{{basePath}}feedbacks?client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}feedbacks"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recommendationsPerAccount",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3a6880bb-295c-4eaa-9b3a-8fde2cb0948d",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}recommendationsPerAccount?wslr_Nbr_AsgndCust=34732,306;&client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}recommendationsPerAccount"
+					],
+					"query": [
+						{
+							"key": "wslr_Nbr_AsgndCust",
+							"value": "34732,306;"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recommendations_wslrNbr&wslrAsgndCustNbr",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3777d515-b31e-472b-baa7-b21e63dfed39",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}recommendations?wslrNbr=44276&wslrAsgndCustNbr=50866&client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}recommendations"
+					],
+					"query": [
+						{
+							"key": "wslrNbr",
+							"value": "44276"
+						},
+						{
+							"key": "wslrAsgndCustNbr",
+							"value": "50866"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recommendationsSellingStories_wslrNbr&wslrAsgndCustNbr",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "39d3484e-ba72-4e03-b521-d440aa27acad",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}recommendationsSellingStories?wslrNbr=22986&wslrAsgndCustNbr=01855&client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}recommendationsSellingStories"
+					],
+					"query": [
+						{
+							"key": "wslrNbr",
+							"value": "22986"
+						},
+						{
+							"key": "wslrAsgndCustNbr",
+							"value": "01855"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "skus_recoId&wslrNbr",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "873e7a31-bb55-4681-b6e7-0a79505f0e01",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}skus?recoId=172116195&wslrNbr=94577&client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}skus"
+					],
+					"query": [
+						{
+							"key": "recoId",
+							"value": "172116195"
+						},
+						{
+							"key": "wslrNbr",
+							"value": "94577"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "surveyMonthly",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c15be201-5563-4871-96b8-fef9649ff812",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"0050B000007LDAZQA4iF4B14N\",\r\n  \"applicationId\": \"LolaApp\",\r\n  \"calendarYearMonthNumber\": \"1\",\r\n  \"dayOfMonthNumber\": \"5\",\r\n  \"ratingCode\": \"2\",\r\n  \"sessionID\": \"0050B000007LDAZQA4SDOFJWEOIFJ30492304794734958738RSAKDFJOIJ923FJ3948FJ3948RJEOEOFJ2039U2309RU90J0493JFi890394JF2093JDMJD029\"\r\n}"
+				},
+				"url": {
+					"raw": "{{basePath}}surveyMonthly?client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}surveyMonthly"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "surveyValidator",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c8f5f52c-556b-45f1-8c13-a861814b7b7e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}surveyValidator?userId=123&validationDays=15&client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}surveyValidator"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "123"
+						},
+						{
+							"key": "validationDays",
+							"value": "15"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vstsBugReport",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d2dc19cc-fb5b-47ea-8001-041b2ff28b14",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"Fabian\",\r\n  \"applicationId\": \"Lola Home\",\r\n  \"sessionID\": \"0050B000007LDAZQA4SDOFJWEOIFJ30492304794734958738\",\r\n  \"title\": \"testing_from_Prod_3\",\r\n  \"userReason\": \"issue when I put my password - testing from production environment Dec 3\",\r\n  \"userMessage\": \"lorem ipsum\",\r\n  \"userEmail\": \"myemail@mail.com\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "{{basePath}}vstsBugReport?client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{basePath}}vstsBugReport"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "25422ee0-d45c-4688-bf83-c0d5c9b56d0d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "7d0bab9f-e971-4666-b2e1-5ae81edd88f9",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "aee1401a-aa2a-47b7-b435-f0045bf3e631",
+			"key": "basePath",
+			"value": "https://abi-lola-sql-api.us-e1.cloudhub.io/api/",
+			"type": "string"
+		}
+	]
+}
