@@ -205,7 +205,7 @@ to evaluate SQL server Database Performance.
 * The information used to create the graphics is located into: `Performance_test_SQL_Results.xlsx`.
 
 <img src="1.2/images/brandPartitions.png" width="400">
-<img src="1.2/images/feedbackOptions.png" width="400">
+<img src="1.2/images/feedbackoptions.png" width="400">
 <img src="1.2/images/opportunitiesPerAccount.png" width="400">
 <img src="1.2/images/metrics.png" width="400">
 <img src="1.2/images/feedbackGET.png" width="400">
